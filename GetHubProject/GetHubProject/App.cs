@@ -11,19 +11,16 @@ namespace GetHubProject
     {
         public App()
         {
-            // The root page of your application
-            MainPage = new ContentPage
+            IntializeComponent();
+            MainPage = new ContentPage()
             {
-                Content = new StackLayout
+                Content = new Label
                 {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            XAlign = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
+
+                    Text = "Welcome to Xamarin Forms!",
+                    TextColor = Color.Red
+                },
+                BackgroundColor = Color.Purple
             };
         }
 
